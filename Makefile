@@ -1,19 +1,25 @@
-install:
-		npm ci && sudo npm link
+install: install-deps
 
-gendiff:
-		node bin/gendiff.js
-
-# Run scan eslint on all folders in a directory
-lint:
-		npx eslint .
-
-# eslint error correction
-lint-fix:
-		npx eslint --fix .
+install-deps:
+	npm ci
 
 test:
-		npx -n --experimental-vm-modules jest
+	node --experimental-vm-modules node_modules/.bin/jest
 
-test-coverage:
-		npm test -- --coverage --coverageProvider=v8
+testj:
+	npx jest
+
+coverage:
+	node --experimental-vm-modules node_modules/.bin/jest --coverage
+
+edit:
+	npx prettier -w .
+
+lint:
+	npx eslint .
+
+publish:
+	npm publish
+
+run:
+	node bin/gendiff.js --format plain __fixtures__/file3.json __fixtures__/file4.json

@@ -3,10 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/shzzos/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/shzzos/frontend-project-46/actions)",
+  "main": "src/parseData.js",
   "bin": {
     "gendiff": "src/genDiff.js"
   },
-  "main": "bin/gendiff.js",
   "scripts": {
     "test": "npx jest"
   },
