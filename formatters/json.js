@@ -2,9 +2,7 @@ import _ from 'lodash';
 
 const inJson = (json) => {
   const setValue = (js, k) => {
-    const value = !_.isObject(js[k].newValue)
-      ? js[k].newValue
-      : inJson(js[k].newValue);
+    const value = !_.isObject(js[k].newValue) ? js[k].newValue : inJson(js[k].newValue);
     return value;
   };
   const arr = _.sortBy(Object.keys(json));

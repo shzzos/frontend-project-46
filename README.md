@@ -7,5 +7,3 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/94a1b56d2f5284215651/maintainability)](https://codeclimate.com/github/shzzos/frontend-project-46/maintainability)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/94a1b56d2f5284215651/test_coverage)](https://codeclimate.com/github/shzzos/frontend-project-46/test_coverage)
-
- 

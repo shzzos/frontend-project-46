@@ -24,7 +24,5 @@ test('getdiff', () => {
   expect(gendiff(fileJson1.pathname, fileJson2.pathname)).toEqual(result);
   expect(gendiff(fileYaml1.pathname, fileYaml2.pathname)).toEqual(result);
   expect(gendiff(fileJson3.pathname, fileJson4.pathname)).toEqual(result2);
-  expect(gendiff(fileJson3.pathname, fileJson4.pathname, 'plain')).toEqual(
-    result3,
-  );
+  expect(gendiff(fileJson3.pathname, fileJson4.pathname, 'plain')).toEqual(result3);
 });
